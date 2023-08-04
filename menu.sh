@@ -276,13 +276,13 @@ echo -e " ${BICyan}[${BIWhite}10${BICyan}]${RED} •${NC} ${YELLOW}TRIAL        
 echo -e " ${BICyan}[${BIWhite}11${BICyan}]${RED} •${NC} ${YELLOW}ADD ${GREEN}HOST        $NC  ${BICyan}[${BIWhite}22${BICyan}]${RED} • ${NC}${YELLOW}FIX MISSING POINTING $NC"
 echo -e " ${BICyan}[${BIWhite} X ${BICyan}] TYPE X FOR EXIT ${BICyan}${BIYellow}${BICyan}${NC}"  
 echo -e " ${RED}"
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e "${BICyan}┌──────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan}│ ${BOLD}${BLUE}Client    = $Name                           ${NC}"
-echo -e "${BICyan}│ ${BOLD}${BLUE}Expired   = $Exp                            ${NC}"
-echo -e "${BICyan}│ ${BOLD}${BLUE}Developer = KANG HORY VPN                   ${NC}"
-echo -e "${BICyan}│ ${BOLD}${RED}Version   = SUPER LTS                       ${NC}"
+echo -e "${BICyan}│ ${BOLD}${GREEN}Client    = $Name                           ${NC}"
+echo -e "${BICyan}│ ${BOLD}${RED}Expired   = $Exp                            ${NC}"
+echo -e "${BICyan}│ ${BOLD}${YELLOW}Developer = KANG HORY VPN                   ${NC}"
+echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = SUPER LTS                       ${NC}"
 echo -e "${BICyan}└──────────────────────────────────────────────────┘${NC}"
 
 echo
