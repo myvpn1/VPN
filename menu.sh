@@ -58,6 +58,7 @@ export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
+
 # // Exporting URL Host
 export Server_URL="raw.githubusercontent.com/Zeastore/test/main"
 export Server1_URL="raw.githubusercontent.com/Zeastore/limit/main"
@@ -96,6 +97,12 @@ totalram=$(($total_ram/1024))
 
 # // Exporting Network Interface
 export NETWORK_IFACE="$(ip route show to default | awk '{print $5}')"
+
+data_ip="https://raw.githubusercontent.com/myvpn1/VPN/main/izin"
+d2=$(date -d "$date_list" +"+%s")
+d1=$(date -d "$Exp" +"+%s")
+dayleft=$(( ($d1 - $d2) / 86400 ))
+
 
 # // Clear
 clear
