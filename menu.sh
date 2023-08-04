@@ -78,6 +78,18 @@ fi
 # // Exporting IP Address
 export IP=$( curl -s https://ipinfo.io/ip/ )
 
+clear
+
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+MYIP=$(curl -sS ipv4.icanhazip.com)
+Name=$(curl -sS https://raw.githubusercontent.com/myvpn1/VPN/main/izin | grep $MYIP | awk '{print $2}')
+if [ "$res" = "Expired" ]; then
+Exp="\e[36mExpired\033[0m"
+else
+Exp=$(curl -sS https://raw.githubusercontent.com/myvpn1/VPN/main/izin | grep $MYIP | awk '{print $3}')
+fi
+
 # TOTAL RAM
 total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
 totalram=$(($total_ram/1024))
