@@ -7,7 +7,7 @@ data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date |
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
 data_ip="https://raw.githubusercontent.com/myvpn1/VPN/main/izin"
 checking_sc() {
-  useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
+  useexp=$(wget -qO- $data_ip | grep $IPVPS | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
     echo -ne
   else
@@ -16,7 +16,7 @@ checking_sc() {
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     echo -e ""
     echo -e "            ${RED}PERMISSION DENIED !${NC}"
-    echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
+    echo -e "   \033[0;33mYour VPS${NC} $IPVPS \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
     echo -e "      \033[0;36mTelegram${NC} t.me/matamata223"
