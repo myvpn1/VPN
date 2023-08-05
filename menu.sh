@@ -281,7 +281,7 @@ echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━�
 echo -e "${BICyan}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan}│ ${BOLD}${GREEN}Client    = $Name                           ${NC}"
 echo -e "${BICyan}│ ${BOLD}${RED}Expired   = $Exp                            ${NC}"
-echo -e "${BICyan}│ ${BOLD}${YELLOW}Developer = KANG HORY VPN                   ${NC}"
+echo -e "${BICyan}│ ${BOLD}${YELLOW}Developer = AndyYuda                   ${NC}"
 echo -e "${BICyan}│ ${BOLD}${PURPLE}Version   = SUPER LTS                       ${NC}"
 echo -e "${BICyan}└──────────────────────────────────────────────────┘${NC}"
 
